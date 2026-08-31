@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "titulo": "Servicio 1",
+        "descripcion": "Descripción del servicio 1."
+    },
+    {
+        "id": 2,
+        "titulo": "Servicio 2",
+        "descripcion": "Descripción del servicio 2."
+    },
+    {
+        "id": 3,
+        "titulo": "Servicio 3",
+        "descripcion": "Descripción del servicio 3."
+    }
+]

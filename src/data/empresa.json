@@ -1,0 +1,12 @@
+{
+    "nombre": "Simetsa",
+    "eslogan": "Escribe aquí el eslogan de la empresa",
+    "descripcion": "Descripción breve de a qué se dedica Simetsa.",
+    "mision": "Misión de la empresa.",
+    "vision": "Visión de la empresa.",
+    "contacto": {
+        "telefono": "",
+        "correo": "",
+        "direccion": ""
+    }
+}
