@@ -1,26 +1,25 @@
 import { useParams, Link } from 'react-router-dom';
-import AppLayout from '../components/layout/AppLayout';
 import { basculasData } from '../data/basculas';
 
 export default function ProductoDetailPage() {
     const { id } = useParams();
-    const producto = basculasData.find((item) => item.id === parseInt(id));
+
+    // Comparamos convirtiendo ambos IDs a String para evitar fallos de tipo (número vs texto)
+    const producto = basculasData.find((item) => String(item.id) === String(id));
 
     if (!producto) {
         return (
-            <AppLayout>
-                <div className="max-w-7xl mx-auto px-4 py-20 text-center">
-                    <h2 className="text-2xl font-bold text-[#162B4E]">Producto no encontrado</h2>
-                    <Link to="/productos/basculas" className="text-[#8D0002] underline mt-4 inline-block">
-                        Volver al catálogo
-                    </Link>
-                </div>
-            </AppLayout>
+            <div className="max-w-7xl mx-auto px-4 py-20 text-center">
+                <h2 className="text-2xl font-bold text-[#162B4E]">Producto no encontrado</h2>
+                <Link to="/productos/basculas" className="text-[#8D0002] underline mt-4 inline-block">
+                    Volver al catálogo
+                </Link>
+            </div>
         );
     }
 
     return (
-        <AppLayout>
+        <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 {/* Breadcrumb */}
@@ -97,6 +96,6 @@ export default function ProductoDetailPage() {
 
                 </div>
             </div>
-        </AppLayout>
+        </>
     );
 }

@@ -4,7 +4,7 @@ import { basculasData } from '../data/basculas';
 
 export default function BasculasPage() {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 11;
+    const itemsPerPage = 12;
 
     const totalPages = Math.ceil(basculasData.length / itemsPerPage);
     const indexOfLastItem = currentPage * itemsPerPage;
