@@ -1,24 +1,36 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [activeMenu, setActiveMenu] = useState(null);
 
-    // Espacios para agregar categorías y subopciones manualmente
     const productosData = [
         {
-            categoria: "CATEGORÍA 1",
-            items: ["Opción 1", "Opción 2", "Opción 3"]
+            categoria: "CATÁLOGO",
+            items: [
+                { nombre: "Básculas", link: "/productos/basculas" },
+                { nombre: "Balanzas", link: "#" },
+                { nombre: "Accesorios", link: "#" }
+            ]
         },
         {
             categoria: "CATEGORÍA 2",
-            items: ["Opción 1", "Opción 2", "Opción 3"]
+            items: [
+                { nombre: "Opción 1", link: "#" },
+                { nombre: "Opción 2", link: "#" },
+                { nombre: "Opción 3", link: "#" }
+            ]
         }
     ];
 
     const serviciosData = [
         {
             categoria: "SERVICIOS PRINCIPALES",
-            items: ["Calibración de básculas", "Mantenimiento preventivo", "Reparación"]
+            items: [
+                { nombre: "Calibración de básculas", link: "#" },
+                { nombre: "Mantenimiento preventivo", link: "#" },
+                { nombre: "Reparación", link: "#" }
+            ]
         }
     ];
 
@@ -27,21 +39,18 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
 
-                    {/* Logo de la empresa desde /image/LOGO SURTI.jpg */}
                     <div className="flex-shrink-0 flex items-center">
-                        <a href="#">
+                        <Link to="/">
                             <img
-                                src="/image/LOGO SURTI.jpg"
+                                src="/image/logo-surti.jpg"
                                 alt="SURTI S.A. Logo"
                                 className="h-14 w-auto object-contain"
                             />
-                        </a>
+                        </Link>
                     </div>
 
-                    {/* Menú de navegación */}
                     <nav className="flex space-x-8 h-full items-center">
 
-                        {/* Menú Desplegable: PRODUCTOS */}
                         <div
                             className="relative h-full flex items-center"
                             onMouseEnter={() => setActiveMenu('productos')}
@@ -67,12 +76,13 @@ export default function Navbar() {
                                                 <ul className="space-y-2">
                                                     {cat.items.map((item, itemIdx) => (
                                                         <li key={itemIdx}>
-                                                            <a
-                                                                href="#"
+                                                            <Link
+                                                                to={item.link}
                                                                 className="text-sm text-gray-700 hover:text-[#8D0002] transition-colors"
+                                                                onClick={() => setActiveMenu(null)}
                                                             >
-                                                                {item}
-                                                            </a>
+                                                                {item.nombre}
+                                                            </Link>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -83,7 +93,6 @@ export default function Navbar() {
                             )}
                         </div>
 
-                        {/* Menú Desplegable: SERVICIOS */}
                         <div
                             className="relative h-full flex items-center"
                             onMouseEnter={() => setActiveMenu('servicios')}
@@ -109,12 +118,13 @@ export default function Navbar() {
                                                 <ul className="space-y-2">
                                                     {cat.items.map((item, itemIdx) => (
                                                         <li key={itemIdx}>
-                                                            <a
-                                                                href="#"
+                                                            <Link
+                                                                to={item.link}
                                                                 className="text-sm text-gray-700 hover:text-[#8D0002] transition-colors"
+                                                                onClick={() => setActiveMenu(null)}
                                                             >
-                                                                {item}
-                                                            </a>
+                                                                {item.nombre}
+                                                            </Link>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -125,17 +135,15 @@ export default function Navbar() {
                             )}
                         </div>
 
-                        {/* Enlace directo: CONÓZCANOS */}
                         <a
-                            href="#nosotros"
+                            href="/#nosotros"
                             className="text-sm font-semibold uppercase tracking-wider text-[#162B4E] hover:text-[#8D0002] transition-colors"
                         >
                             Conózcanos
                         </a>
 
-                        {/* Enlace directo: CONTACTO */}
                         <a
-                            href="#contacto"
+                            href="/#contacto"
                             className="text-sm font-semibold uppercase tracking-wider text-[#162B4E] hover:text-[#8D0002] transition-colors"
                         >
                             Contacto
