@@ -752,5 +752,70 @@ export const accesoriosData = [
             { clave: "Capacidad", valor: "Según celdas conectadas" },
             { clave: "Resolución", valor: "A/D: 200.000" }
         ]
+    },
+    {
+        id: 58,
+        categoria: "K3000",
+        nombre: "Pantalla remota MRD",
+        descripcionCorta: "Pantalla remota MRD5, visualización LED verde de alto contraste, estructura robusta y comunicación estándar, diseñada para mostrar el peso a distancia en básculas industriales o comerciales.",
+        descripcionLarga: "Pantalla remota MRD5, visualización LED verde de alto contraste, estructura robusta y comunicación estándar, diseñada para mostrar el peso a distancia en básculas industriales o comerciales.",
+        imagen: "/image/.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "5" },
+            { clave: "Capacidad", valor: "Sigue el rango del indicador al que se conecta" },
+            { clave: "Resolución", valor: "Configurada en el indicador principal" }
+        ]
+    },
+    {
+        id: 59,
+        categoria: "Cable 6",
+        nombre: "Cable para celdas de carga",
+        descripcionCorta: "Cables blindados diseñados para la conexión de celdas de carga, transmiten la señal de pesaje y la alimentación eléctrica, protegiendo la medición contra interferencias externas.",
+        descripcionLarga: "Cables blindados diseñados para la conexión de celdas de carga, transmiten la señal de pesaje y la alimentación eléctrica, protegiendo la medición contra interferencias externas.",
+        imagen: "/image/.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "1000" },
+            { clave: "Capacidad", valor: "6 conductores + 1 hilo de drenaje" },
+            { clave: "Resolución", valor: "N/A" }
+        ]
+    },
+    {
+        id: 60,
+        categoria: "Cable 4",
+        nombre: "Cable para celdas de carga",
+        descripcionCorta: "Cables blindados diseñados para la conexión de celdas de carga, transmiten la señal de pesaje y la alimentación eléctrica, protegiendo la medición contra interferencias externas.",
+        descripcionLarga: "Cables blindados diseñados para la conexión de celdas de carga, transmiten la señal de pesaje y la alimentación eléctrica, protegiendo la medición contra interferencias externas.",
+        imagen: "/image/.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "600" },
+            { clave: "Capacidad", valor: "4 conductores + 1 hilo de drenaje" },
+            { clave: "Resolución", valor: "N/A" }
+        ]
+    },
+    {
+        id: 61,
+        categoria: "-",
+        nombre: "Caja de uniones en acero inoxidable",
+        descripcionCorta: "Caja de uniones en acero inoxidable que conecta y equilibra la señal de las celdas de carga, con protección IP68 para uso en entornos industriales o exteriores.",
+        descripcionLarga: "Caja de uniones en acero inoxidable que conecta y equilibra la señal de las celdas de carga, con protección IP68 para uso en entornos industriales o exteriores.",
+        imagen: "/image/.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "1" },
+            { clave: "Capacidad", valor: "4 a 6 celdas de carga" },
+            { clave: "Resolución", valor: "N/A" }
+        ]
+    },
+    {
+        id: 62,
+        categoria: "JB4A",
+        nombre: "Caja de uniones en plástico ABS",
+        descripcionCorta: "Caja de uniones en plástico ABS que conecta y equilibra la señal de las celdas de carga, con protección IP68.",
+        descripcionLarga: "Caja de uniones en plástico ABS que conecta y equilibra la señal de las celdas de carga, con protección IP68.",
+        imagen: "/image/.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "1" },
+            { clave: "Capacidad", valor: "4 a 6 celdas de carga" },
+            { clave: "Resolución", valor: "N/A" }
+        ]
     }
 ];
