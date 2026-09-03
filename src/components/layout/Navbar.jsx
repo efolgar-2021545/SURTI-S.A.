@@ -10,7 +10,7 @@ export default function Navbar() {
             items: [
                 { nombre: "Básculas", link: "/productos/basculas" },
                 { nombre: "Balanzas", link: "/productos/balanzas" },
-                { nombre: "Accesorios", link: "#" }
+                { nombre: "Accesorios", link: "/productos/accesorios" }
             ]
         },
         {

@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { basculasData } from '../data/basculas';
+import { accesoriosData } from '../data/accesorios';
 
-export default function BasculasPage() {
+export default function AccesoriosPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
 
-    const totalPages = Math.ceil(basculasData.length / itemsPerPage);
+    const totalPages = Math.ceil(accesoriosData.length / itemsPerPage);
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = basculasData.slice(indexOfFirstItem, indexOfLastItem);
+    const currentItems = accesoriosData.slice(indexOfFirstItem, indexOfLastItem);
 
     return (
         <>
-            {/* Banner Superior con Links */}
+            {/* Banner Superior */}
             <div className="bg-[#162B4E] text-white py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <h1 className="text-3xl font-bold tracking-tight">Básculas</h1>
+                    <h1 className="text-3xl font-bold tracking-tight">Accesorios</h1>
                     <p className="text-sm text-gray-300 mt-2">
                         <Link to="/" className="hover:underline hover:text-white transition-colors">
                             INICIO
@@ -26,7 +26,7 @@ export default function BasculasPage() {
                             PRODUCTOS
                         </Link>
                         {' / '}
-                        <span className="text-gray-400">BÁSCULAS</span>
+                        <span className="text-gray-400">ACCESORIOS</span>
                     </p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ export default function BasculasPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-                    {/* Menú Lateral de Filtros */}
+                    {/* Menú Lateral */}
                     <aside className="space-y-6">
                         <div>
                             <h3 className="text-lg font-bold text-[#162B4E] mb-3">Buscar productos</h3>
@@ -47,16 +47,18 @@ export default function BasculasPage() {
                         <div>
                             <h3 className="text-lg font-bold text-[#162B4E] border-b pb-2 mb-3">Catálogo</h3>
                             <ul className="space-y-2 text-sm text-gray-700">
-                                <li className="font-semibold text-[#8D0002]">• Básculas ({basculasData.length})</li>
+                                <li>
+                                    <Link to="/productos/basculas" className="hover:text-[#8D0002] transition-colors block">
+                                        • Básculas
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link to="/productos/balanzas" className="hover:text-[#8D0002] transition-colors block">
                                         • Balanzas
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link to="/productos/accesorios" className="hover:text-[#8D0002] transition-colors block">
-                                        • Accesorios
-                                    </Link>
+                                <li className="font-semibold text-[#8D0002]">
+                                    • Accesorios ({accesoriosData.length})
                                 </li>
                             </ul>
                         </div>
@@ -78,10 +80,12 @@ export default function BasculasPage() {
                                                 className="max-h-full max-w-full object-contain"
                                             />
                                         </div>
+
                                         <span className="text-xs font-semibold text-[#8D0002] uppercase tracking-wider block mb-1">
                                             {producto.categoria || producto.modelo}
                                         </span>
-                                        <h3 className="text-base font-bold text-[#162B4E] mt-1 mb-2">
+
+                                        <h3 className="text-base font-bold text-[#162B4E] mb-2">
                                             {producto.nombre}
                                         </h3>
                                         <p className="text-xs text-gray-600 line-clamp-3 mb-4">
@@ -90,10 +94,10 @@ export default function BasculasPage() {
                                     </div>
 
                                     <Link
-                                        to={`/productos/basculas/${producto.id}`}
-                                        className="inline-block bg-[#8D0002] hover:bg-[#6e0002] text-white text-xs font-semibold py-2 px-6 rounded-full transition-colors self-center mt-2"
+                                        to={`/productos/accesorios/${producto.id}`}
+                                        className="inline-block bg-[#162B4E] hover:bg-[#0f1f38] text-white text-xs font-semibold py-2 px-6 rounded transition-colors self-center mt-2"
                                     >
-                                        Ver más
+                                        VER MÁS
                                     </Link>
                                 </div>
                             ))}

@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { balanzasData } from '../data/balanzas'; // Ajusta la ruta a tu archivo de balanzas
+import { balanzasData } from '../data/balanzas';
 
 export default function BalanzasPage() {
     const [currentPage, setCurrentPage] = useState(1);
-
-    // 1. Establece el límite a 11 elementos por página
     const itemsPerPage = 12;
 
     const totalPages = Math.ceil(balanzasData.length / itemsPerPage);
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-
-    // 2. Extrae únicamente los 11 ítems correspondientes a la página actual
     const currentItems = balanzasData.slice(indexOfFirstItem, indexOfLastItem);
 
     return (
@@ -52,14 +48,18 @@ export default function BalanzasPage() {
                             <h3 className="text-lg font-bold text-[#162B4E] border-b pb-2 mb-3">Catálogo</h3>
                             <ul className="space-y-2 text-sm text-gray-700">
                                 <li>
-                                    <Link to="/productos/basculas" className="hover:text-[#8D0002] cursor-pointer">
+                                    <Link to="/productos/basculas" className="hover:text-[#8D0002] transition-colors block">
                                         • Básculas
                                     </Link>
                                 </li>
                                 <li className="font-semibold text-[#8D0002]">
                                     • Balanzas ({balanzasData.length})
                                 </li>
-                                <li className="hover:text-[#8D0002] cursor-pointer">• Accesorios</li>
+                                <li>
+                                    <Link to="/productos/accesorios" className="hover:text-[#8D0002] transition-colors block">
+                                        • Accesorios
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </aside>
@@ -67,7 +67,6 @@ export default function BalanzasPage() {
                     {/* Grilla de Productos */}
                     <main className="md:col-span-3">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {/* Se itera sobre currentItems (máximo 11) */}
                             {currentItems.map((producto) => (
                                 <div
                                     key={producto.id}
@@ -82,7 +81,6 @@ export default function BalanzasPage() {
                                             />
                                         </div>
 
-                                        {/* Solución al Problema 1: Muestra la categoría o el código/modelo del producto */}
                                         <span className="text-xs font-semibold text-[#8D0002] uppercase tracking-wider block mb-1">
                                             {producto.categoria || producto.modelo}
                                         </span>
@@ -105,7 +103,7 @@ export default function BalanzasPage() {
                             ))}
                         </div>
 
-                        {/* Paginador (Página 1 y Página 2) */}
+                        {/* Paginador */}
                         <div className="flex justify-center items-center space-x-2 mt-12">
                             {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
                                 <button
@@ -115,8 +113,8 @@ export default function BalanzasPage() {
                                         window.scrollTo({ top: 0, behavior: 'smooth' });
                                     }}
                                     className={`px-4 py-2 border text-sm font-semibold rounded ${currentPage === number
-                                            ? 'bg-[#162B4E] text-white border-[#162B4E]'
-                                            : 'bg-white text-[#162B4E] border-gray-300 hover:bg-gray-100'
+                                        ? 'bg-[#162B4E] text-white border-[#162B4E]'
+                                        : 'bg-white text-[#162B4E] border-gray-300 hover:bg-gray-100'
                                         }`}
                                 >
                                     {number}
