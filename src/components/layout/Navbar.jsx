@@ -9,7 +9,7 @@ export default function Navbar() {
             categoria: "CATÁLOGO",
             items: [
                 { nombre: "Básculas", link: "/productos/basculas" },
-                { nombre: "Balanzas", link: "#" },
+                { nombre: "Balanzas", link: "/productos/balanzas" },
                 { nombre: "Accesorios", link: "#" }
             ]
         },
