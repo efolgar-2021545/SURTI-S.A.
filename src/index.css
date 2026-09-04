@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surti-dark: #0b1120;
-  --color-surti-primary: #1d4ed8;
-  --color-surti-secondary: #f59e0b;
+  --color-surti-dark: #162B4E;
+  --color-surti-primary: #162B4E;
+  --color-surti-secondary: #8D0002;
   --color-surti-light: #f8fafc;
   --color-surti-muted: #64748b;
 
