@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className="bg-simetsa-dark text-simetsa-light py-8 text-center text-sm">
-            <p>© {new Date().getFullYear()} Simetsa. Todos los derechos reservados.</p>
+        <footer className="bg-[#162B4E] text-white/80 py-8 text-center text-sm">
+            <p>© {new Date().getFullYear()} SURTI S.A. Todos los derechos reservados.</p>
         </footer>
     );
 }

@@ -8,6 +8,7 @@ import BalanzaDetailPage from '../pages/BalanzaDetailPage';
 import AccesoriosPage from '../pages/AccesoriosPage';
 import AccesoriosDetailPage from '../pages/AccesoriosDetailPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import Footer from '../components/layout/Footer';
 
 export default function AppRouter() {
     return (
@@ -31,6 +32,7 @@ export default function AppRouter() {
                 {/* Ruta 404 */}
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
+            <Footer />
         </>
     );
 }
