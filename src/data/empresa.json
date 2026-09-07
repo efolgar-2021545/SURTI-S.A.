@@ -2,11 +2,11 @@
     "nombre": "SURTI S.A.",
     "eslogan": "Escribe aquí el eslogan real de la empresa",
     "descripcion": "Escribe aquí a qué se dedica SURTI S.A.",
-    "mision": "Escribe aquí la Misión de la empresa.",
-    "vision": "Escribe aquí la Visión de la empresa.",
+    "mision": "Somos una empresa guatemalteca dedicada a servicios de calibración en magnitud masa garantizando la satisfacción total de nuestros clientes, brindándoles confiabilidad en las mediciones de sus procesos, crecimiento de su rentabilidad y mejoramiento continuo.",
+    "vision": "En el 2030 ser una empresa líder en Centroamérica en la calibración de instrumentos de medición, reconocida por nuestra excelencia técnica, innovación constante y comrpomiso con la satisfacción total de nuestros clientes.",
     "contacto": {
-        "telefono": "",
-        "correo": "",
-        "direccion": ""
+        "telefono": "(502) 66721242 * (502) 53274984",
+        "correo": "comercial@simetca.com",
+        "direccion": "16 avenida 3-45 Centro de Comercio Santa Fe Zona 4 Villa Nueva, Guatemala"
     }
 }
