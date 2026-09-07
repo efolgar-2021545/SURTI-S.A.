@@ -5,7 +5,14 @@ import empresa from "../../data/empresa.json";
 export default function HeroSection() {
     return (
         <section id="inicio" className="relative bg-[#162B4E] text-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+            {/* Imagen de fondo: coloca tu foto en public/image/hero-bg.jpg */}
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-30"
+                style={{ backgroundImage: "url('/image/hero-bg.jpg')" }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#162B4E] via-[#162B4E]/90 to-[#162B4E]/70" />
+
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
                 <span className="inline-block text-xs font-semibold uppercase tracking-widest text-white/70 border border-white/20 rounded-full px-4 py-1 mb-6">
                     Básculas · Balanzas · Accesorios
                 </span>
@@ -37,7 +44,7 @@ export default function HeroSection() {
                 </div>
             </div>
 
-            <div className="h-2 bg-[#8D0002]" />
+            <div className="relative h-2 bg-[#8D0002]" />
         </section>
     );
 }

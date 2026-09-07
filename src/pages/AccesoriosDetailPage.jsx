@@ -52,7 +52,7 @@ export default function AccesoriosDetailPage() {
                     <div className="space-y-6">
                         <div>
                             <span className="text-sm font-semibold text-[#8D0002] uppercase tracking-wider">
-                                {producto.categoria} - {producto.modelo}
+                                {producto.categoria}
                             </span>
                             <h2 className="text-3xl font-bold text-[#162B4E] mt-1">{producto.nombre}</h2>
                         </div>
