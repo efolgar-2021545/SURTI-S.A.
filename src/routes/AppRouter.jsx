@@ -1,14 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
-import HomePage from '../pages/HomePage';
-import BasculasPage from '../pages/BasculasPage';
-import ProductoDetailPage from '../pages/ProductoDetailPage';
-import BalanzasPage from '../pages/BalanzasPage';
-import BalanzaDetailPage from '../pages/BalanzaDetailPage';
-import AccesoriosPage from '../pages/AccesoriosPage';
-import AccesoriosDetailPage from '../pages/AccesoriosDetailPage';
-import NotFoundPage from '../pages/NotFoundPage';
 import Footer from '../components/layout/Footer';
+import HomePage from '../pages/HomePage';
+import ProductListPage from '../pages/ProductListPage';
+import ProductDetailPage from '../pages/ProductDetailPage';
+import NotFoundPage from '../pages/NotFoundPage';
 
 export default function AppRouter() {
     return (
@@ -17,17 +13,9 @@ export default function AppRouter() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
 
-                {/* Rutas para Básculas */}
-                <Route path="/productos/basculas" element={<BasculasPage />} />
-                <Route path="/productos/basculas/:id" element={<ProductoDetailPage />} />
-
-                {/* Rutas para Balanzas */}
-                <Route path="/productos/balanzas" element={<BalanzasPage />} />
-                <Route path="/productos/balanzas/:id" element={<BalanzaDetailPage />} />
-
-                {/* Rutas para Accesorios */}
-                <Route path="/productos/accesorios" element={<AccesoriosPage />} />
-                <Route path="/productos/accesorios/:id" element={<AccesoriosDetailPage />} />
+                {/* Rutas de catálogo: :categoria = basculas | balanzas | accesorios */}
+                <Route path="/productos/:categoria" element={<ProductListPage />} />
+                <Route path="/productos/:categoria/:id" element={<ProductDetailPage />} />
 
                 {/* Ruta 404 */}
                 <Route path="*" element={<NotFoundPage />} />
