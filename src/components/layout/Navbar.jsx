@@ -12,14 +12,6 @@ export default function Navbar() {
                 { nombre: "Balanzas", link: "/productos/balanzas" },
                 { nombre: "Accesorios", link: "/productos/accesorios" }
             ]
-        },
-        {
-            categoria: "CATEGORÍA 2",
-            items: [
-                { nombre: "Opción 1", link: "#" },
-                { nombre: "Opción 2", link: "#" },
-                { nombre: "Opción 3", link: "#" }
-            ]
         }
     ];
 
