@@ -1,8 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-    // ⚠️ Cambia este número por el WhatsApp real de SURTI S.A. (formato: código de país + número, sin + ni espacios)
-    const numeroWhatsApp = "50212345678";
+    const numeroWhatsApp = "50266721242";
     const mensaje = "Hola, quisiera más información sobre sus productos.";
 
     const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
