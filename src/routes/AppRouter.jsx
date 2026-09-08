@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import WhatsAppButton from '../components/layout/WhatsAppButton';
 import HomePage from '../pages/HomePage';
 import ProductListPage from '../pages/ProductListPage';
 import ProductDetailPage from '../pages/ProductDetailPage';
@@ -21,6 +22,7 @@ export default function AppRouter() {
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />
+            <WhatsAppButton />
         </>
     );
 }
