@@ -1,12 +1,42 @@
 {
-    "nombre": "SURTI S.A.",
-    "eslogan": "Escribe aquí el eslogan real de la empresa",
-    "descripcion": "Escribe aquí a qué se dedica SURTI S.A.",
-    "mision": "Somos una empresa guatemalteca dedicada a servicios de calibración en magnitud masa garantizando la satisfacción total de nuestros clientes, brindándoles confiabilidad en las mediciones de sus procesos, crecimiento de su rentabilidad y mejoramiento continuo.",
-    "vision": "En el 2030 ser una empresa líder en Centroamérica en la calibración de instrumentos de medición, reconocida por nuestra excelencia técnica, innovación constante y comrpomiso con la satisfacción total de nuestros clientes.",
+    "nombre": "SURTIBÁSCULAS S.A.",
+    "eslogan": "Su socio en pesaje industrial en Guatemala",
+    "descripcion": "Somos una empresa guatemalteca que busca establecer la más efectiva y competitiva operación en venta, instalación, reparación y mantenimiento de equipos de pesaje, brindando la seguridad de un buen trabajo y productos de calidad.",
+    "mision": "Brindar soluciones integrales y confiables en sistemas de pesaje mediante la venta, instalación, mantenimiento, reparación y soporte técnico de balanzas, básculas y equipos relacionados, proporcionando a nuestros clientes atención profesional, oportuna y orientada a sus necesidades. Desarrollamos nuestras actividades con personal competente, procesos organizados y una cultura enfocada en la calidad, productividad, responsabilidad, rentabilidad y mejora continua.",
+    "vision": "Ser una empresa referente en Guatemala en soluciones integrales de pesaje, reconocida por nuestra capacidad técnica, calidad de servicio, cumplimiento y atención al cliente. Buscamos construir una organización sólida, rentable y sostenible, con cobertura nacional, personal capacitado y procesos que permitan atender eficientemente a los diferentes sectores productivos del país.",
+    "valores": [
+        "Responsabilidad",
+        "Integridad",
+        "Respeto",
+        "Calidad",
+        "Servicio",
+        "Trabajo en equipo",
+        "Aprendizaje",
+        "Cuidado de los recursos",
+        "Productividad",
+        "Mejora continua"
+    ],
+    "politicaCalidad": {
+        "compromiso": "SURTIBÁSCULAS se compromete a proporcionar productos y servicios relacionados con sistemas de pesaje que satisfagan los requisitos acordados con nuestros clientes, mediante personal competente, recursos adecuados, procesos organizados y seguimiento de los resultados.",
+        "puntos": [
+            "Comprender las necesidades del cliente.",
+            "Cumplir requisitos técnicos y comerciales acordados.",
+            "Desarrollar competencias del personal.",
+            "Reducir errores, retrabajos y reincidencias.",
+            "Evaluar el desempeño y promover la mejora continua.",
+            "Mantener una operación rentable y sostenible."
+        ]
+    },
+    "certificacion": {
+        "descripcion": "SURTIBÁSCULAS S.A. trabaja con un ente acreditado, nuestra empresa aliada.",
+        "ente": "SIMET S.A.",
+        "logo": "/image/aliados/simet.png",
+        "experiencia": "",
+        "horario": ""
+    },
     "contacto": {
-        "telefono": "(502) 66721242 * (502) 53274984",
-        "correo": "comercial@simetca.com",
-        "direccion": "16 avenida 3-45 Centro de Comercio Santa Fe Zona 4 Villa Nueva, Guatemala"
+        "telefono": "(502) 6661-9322 * (502) 3010-7058",
+        "correo": "comercial@surti-basculas.com",
+        "direccion": "14 Avenida A 10-74 zona 3 Villa Nueva, Guatemala"
     }
 }
