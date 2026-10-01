@@ -1,17 +1,52 @@
 [
     {
         "id": 1,
-        "titulo": "Servicio 1",
-        "descripcion": "Descripción del servicio 1."
+        "titulo": "Balanzas analíticas y de precisión",
+        "descripcion": "Balanzas de alta resolución para laboratorio y control de calidad."
     },
     {
         "id": 2,
-        "titulo": "Servicio 2",
-        "descripcion": "Descripción del servicio 2."
+        "titulo": "Básculas y balanzas de proceso",
+        "descripcion": "Equipos de pesaje para procesos productivos de distintos sectores."
     },
     {
         "id": 3,
-        "titulo": "Servicio 3",
-        "descripcion": "Descripción del servicio 3."
+        "titulo": "Básculas de mediana y alta capacidad",
+        "descripcion": "Soluciones de pesaje para cargas medianas y altas en entornos industriales."
+    },
+    {
+        "id": 4,
+        "titulo": "Básculas ferroviarias y de riel",
+        "descripcion": "Sistemas de pesaje para vehículos ferroviarios y de riel."
+    },
+    {
+        "id": 5,
+        "titulo": "Tanques, silos y tolva báscula",
+        "descripcion": "Sistemas de pesaje para tanques, silos y tolvas."
+    },
+    {
+        "id": 6,
+        "titulo": "Básculas pesa camiones",
+        "descripcion": "Básculas camioneras de 100–120 t con plataformas de 6 a 24 m, instaladas llave en mano."
+    },
+    {
+        "id": 7,
+        "titulo": "Venta de patrones de masa OIML",
+        "descripcion": "Patrones de masa desde 1 mg hasta 1,000 kg, clases OIML F1 a M3, con ajuste e informe de calibración con trazabilidad."
+    },
+    {
+        "id": 8,
+        "titulo": "Asesoría en Aseguramiento Metrológico",
+        "descripcion": "Asesoría técnica para asegurar la confiabilidad de las mediciones de su operación."
+    },
+    {
+        "id": 9,
+        "titulo": "Reparación de equipos, cualquier marca",
+        "descripcion": "Servicio técnico de reparación y mantenimiento para equipos de pesaje de cualquier marca."
+    },
+    {
+        "id": 10,
+        "titulo": "Capacitación en metrología básica",
+        "descripcion": "Capacitación técnica en metrología básica para su personal."
     }
 ]
