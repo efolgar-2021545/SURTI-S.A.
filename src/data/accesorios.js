@@ -791,5 +791,18 @@ export const accesoriosData = [
             { clave: "Capacidad", valor: "4 a 6 celdas de carga" },
             { clave: "Resolución", valor: "N/A" }
         ]
+    },
+    {
+        id: 62,
+        categoria: "K300",
+        nombre: "Indicador de peso K300",
+        descripcionCorta: "Indicador de peso K300 con pantalla de alto contraste, funciona en modo análogo o digital, con tecnología anti-interferencias y salida por SD card opcional.",
+        descripcionLarga: "Indicador de peso K300 con pantalla de alto contraste, funciona en modo análogo o digital, con tecnología anti-interferencias y salida por SD card opcional.",
+        imagen: "/image/K300.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "-" },
+            { clave: "Capacidad", valor: "Según celdas conectadas" },
+            { clave: "Resolución", valor: "-" }
+        ]
     }
 ];

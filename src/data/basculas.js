@@ -297,6 +297,23 @@ export const basculasData = [
             { clave: "Capacidad", valor: "1t → 0.75x0.75 m / 1x1m, 3 t → 1.2x1.2m, 5 t → 1.5x1.5m / 2x2" },
             { clave: "Resolución", valor: "1ton → 200 g, 3 ton → 500 g, 5 ton → 1kg" }
         ]
+    },
+    {
+        id: 24,
+        categoria: "TRUCK SCALE",
+        nombre: "Báscula camionera",
+        descripcionCorta: "Plataformas modulares para pesaje de vehículos de carga, fabricadas en acero estructural con vigas H o vigas U, para transporte en camión o contenedor.",
+        descripcionLarga: "Plataformas modulares para pesaje de vehículos de carga, diseñadas para transporte en camión o contenedor y fabricadas en acero estructural. Disponibles con estructura de vigas H o vigas U, con acabado en pintura epóxica. Incluyen celdas de columna M36i con aprobación OIML, en acero inoxidable y herméticamente selladas IP68 (opcional: celdas HM9B), e indicador con carcasa en acero inoxidable IP65, matriz de puntos LCD 240x128, precisión de hasta 10,000e e interfaces RS232, RS485 y Ethernet. Otros largos a pedido. El concreto para la obra civil no está incluido en la lista de embarque ni entregables.",
+        imagen: "/image/BASCULA-CAMIONERA.jpg",
+        especificaciones: [
+            { clave: "Unidades", valor: "-" },
+            { clave: "Capacidad", valor: "30/120 t – 100/120 t" },
+            { clave: "Resolución", valor: "20 kg (Clase III)" },
+            { clave: "Ancho de plataforma", valor: "3 m ó 3.4 m" },
+            { clave: "Largo de plataforma", valor: "6 a 24 m" },
+            { clave: "Energía", valor: "100–240V (50–60Hz)" },
+            { clave: "Comunicación", valor: "Continua, impresión, Modbus-RTU, Modbus-TCP" }
+        ]
     }
     // Continúa agregando los demás productos hasta completar tu catálogo...
 ];
