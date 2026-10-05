@@ -1,10 +1,6 @@
 {
-    "pagoEnLinea": {
-        "descripcion": "Realiza tu pago de forma segura a través de nuestro enlace de pago.",
-        "link": ""
-    },
     "transferencia": {
-        "descripcion": "También puedes pagar por transferencia bancaria a la siguiente cuenta.",
+        "descripcion": "Puedes pagar por transferencia bancaria a la siguiente cuenta.",
         "datos": [
             {
                 "clave": "Banco",
