@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import ScrollToHash from '../components/layout/ScrollToHash';
 import WhatsAppButton from '../components/layout/WhatsAppButton';
 import HomePage from '../pages/HomePage';
 import ProductListPage from '../pages/ProductListPage';
@@ -11,6 +12,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 export default function AppRouter() {
     return (
         <>
+            <ScrollToHash />
             <Navbar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
