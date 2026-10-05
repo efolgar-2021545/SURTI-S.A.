@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Phone, Mail, MapPin } from "lucide-react";
 import empresa from "../../data/empresa.json";
 
@@ -19,30 +18,6 @@ export default function Footer() {
                         <p className="text-sm text-white/60 leading-relaxed mb-4">
                             {empresa.descripcion}
                         </p>
-                        {/* Redes Sociales con react-icons/fa */}
-                        <div className="flex gap-3">
-                            <a
-                                href="#"
-                                aria-label="Facebook"
-                                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#8D0002] flex items-center justify-center transition-colors text-white"
-                            >
-                                <FaFacebookF size={16} />
-                            </a>
-                            <a
-                                href="#"
-                                aria-label="Instagram"
-                                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#8D0002] flex items-center justify-center transition-colors text-white"
-                            >
-                                <FaInstagram size={16} />
-                            </a>
-                            <a
-                                href="#"
-                                aria-label="LinkedIn"
-                                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#8D0002] flex items-center justify-center transition-colors text-white"
-                            >
-                                <FaLinkedinIn size={16} />
-                            </a>
-                        </div>
                     </div>
 
                     {/* Catálogo */}
